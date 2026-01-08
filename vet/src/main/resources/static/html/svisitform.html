@@ -1,0 +1,29 @@
+<!-- Détail de l'animal ici-->
+<div class="row">
+    <div><!-- Table des visites de l'animal ici--></div>
+    <form action="/animals/visits/add" method="POST">
+        <h3>Ajouter une visite</h3>
+        <input type="hidden" id="animal">
+        <label for="vet">Vétérinaire</label>
+        <div>
+            <select id="vet" name="vet" autofocus>
+                <option value="200">Veto200</option>
+            </select>
+            <span class="fieldError">Message d'erreur</span>
+        </div>
+
+        <label for="date">Date</label>
+        <div>
+            <input type="date" id="date">
+            <span class="fieldError">Message d'erreur</span>
+        </div>
+
+        <label for="price">Prix</label>
+        <div>
+            <input type="number" id="price">
+            <span class="fieldError">Message d'erreur</span>
+        </div>
+
+        <button type="submit" class="btn center">Ajouter une visite</button>
+    </form>
+</div>
